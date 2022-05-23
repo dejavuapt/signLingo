@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LevelFstTrainingActivity"
+    android:background="@color/MAIN_BG_COLOR"
+    android:orientation="vertical"
+    android:padding="15dp"
+    >
+
+
+    <ProgressBar
+        android:id="@+id/progressAnswers"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@+id/backActionButton"
+        android:progressDrawable="@drawable/custom_progress_bg" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backActionButton"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:focusable="true"
+        app:backgroundTint="@color/MAIN_BG_COLOR"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <TextView
+        android:id="@+id/textTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backActionButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="75dp"
+        android:fontFamily="@font/inder"
+        android:text="Something task"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/signPhotoShape"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textTask"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <EditText
+        android:id="@+id/editTextUserLetter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signPhotoShape"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="120dp"
+        android:ems="1"
+        android:fontFamily="@font/inder"
+        android:hint="letter"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="@color/TEXT_COLOR"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/checkAnswerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextUserLetter"
+        android:layout_alignStart="@+id/editTextUserLetter"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:height="56dp"
+        android:fontFamily="@font/inder"
+        android:text="check"
+        android:textAlignment="center"
+        android:textColor="@color/TEXT_COLOR"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/skipQuestionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextUserLetter"
+        android:layout_alignEnd="@+id/editTextUserLetter"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:height="56dp"
+        android:fontFamily="@font/inder"
+        android:text="skip"
+        android:textAlignment="center"
+        android:textColor="@color/TEXT_COLOR"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

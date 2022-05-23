@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/PATHWAY_COLOR"
+    android:gravity="bottom"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textAboutSuccessOrNot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Nice"
+        android:textAlignment="textStart"
+        android:textColor="@color/MAIN_BG_COLOR"
+        android:textSize="34sp" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAboutSuccessOrNot"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Next"
+        android:textAlignment="center"
+        android:textColor="@color/TEXT_COLOR"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
