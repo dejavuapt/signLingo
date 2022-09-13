@@ -1,3 +1,2 @@
 # signLingo
-
-Just uni practicle project
+## 📱 Mobile application for learning Russian sign language
